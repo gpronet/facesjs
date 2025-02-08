@@ -28,7 +28,7 @@
     "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/commonjs && echo '{\"type\": \"commonjs\"}' > build/commonjs/package.json",
     "build-esmodules": "babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/esmodules",
     "build:component": "rollup -c build/rollup.config.js",
-    "prepare": "npm run build:component"
+    "prepare": "npm run build:component",
     "build-site": "vite build",  
     "prepublishOnly": "pnpm test && pnpm run build"
   },
