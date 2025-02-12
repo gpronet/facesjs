@@ -28,7 +28,7 @@
     "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/commonjs && echo '{\"type\": \"commonjs\"}' > build/commonjs/package.json",
     "build-esmodules": "cross-env BABEL_ENV=esmodules babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/esmodules",
     "build-site": "vite build",
-    "prepare": "node tools/process-svgs.js && husky",
+    "prepare": "node tools/process-svgs.js && husky && pnpm run build",
     "prepublishOnly": "pnpm test && pnpm run build",
     "rmdir": "node -e \"var fs = require('fs'); try{process.argv.slice(1).map((fpath) => fs.rmdirSync(fpath, { recursive: true }))}catch(err){console.log(`Dist not found`)}; process.exit(0);\""
   },
