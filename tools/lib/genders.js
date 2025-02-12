@@ -296,6 +296,7 @@ export const genders = {
     jersey3: "both",
     jersey4: "both",
     jersey5: "both",
+    driversuit1: "both",
   },
   miscLine: {
     blush: "female",

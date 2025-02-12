@@ -24,13 +24,13 @@
   "scripts": {
     "dev": "vite",
     "test": "pnpm tsc --noEmit --emitDeclarationOnly false && eslint && vitest run",
-    "build": "node tools/process-svgs.js && rm -rf build && pnpm run build-commonjs && pnpm run build-esmodules && pnpm tsc -p tsconfig-esmodules.json && pnpm tsc -p tsconfig-commonjs.json",
+    "build": "node tools/process-svgs.js && npm run rmdir build && pnpm run build-commonjs && pnpm run build-esmodules && pnpm tsc -p tsconfig-esmodules.json && pnpm tsc -p tsconfig-commonjs.json",
     "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/commonjs && echo '{\"type\": \"commonjs\"}' > build/commonjs/package.json",
-    "build-esmodules": "babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/esmodules",
-    "build:component": "rollup -c build/rollup.config.js",
-    "prepare": "npm run build:component",
-    "build-site": "vite build",  
-    "prepublishOnly": "pnpm test && pnpm run build"
+    "build-esmodules": "cross-env BABEL_ENV=esmodules babel src --extensions '.js,.jsx,.ts,.tsx' --out-dir build/esmodules",
+    "build-site": "vite build",
+    "prepare": "node tools/process-svgs.js && husky",
+    "prepublishOnly": "pnpm test && pnpm run build",
+    "rmdir": "node -e \"var fs = require('fs'); try{process.argv.slice(1).map((fpath) => fs.rmdirSync(fpath, { recursive: true }))}catch(err){console.log(`Dist not found`)}; process.exit(0);\""
   },
   "devDependencies": {
     "@babel/cli": "^7.24.7",
