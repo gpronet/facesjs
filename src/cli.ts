@@ -111,4 +111,5 @@ if (options.output === undefined) {
   console.log(svgString);
 } else {
   fs.writeFileSync(options.output, svgString);
+  fs.writeFileSync(options.output + ".json", JSON.stringify(face));
 }
