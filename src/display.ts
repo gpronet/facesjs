@@ -330,6 +330,11 @@ export const display = (
 
   const featureInfos: FeatureInfo[] = [
     {
+      name: "head",
+      positions: [null], // Meaning it just gets placed into the SVG with no translation
+      scaleFatness: true,
+    },
+    {
       name: "hairBg",
       positions: [null],
       scaleFatness: true,
@@ -361,11 +366,6 @@ export const display = (
         [55, 325] as [number, number],
         [345, 325] as [number, number],
       ],
-      scaleFatness: true,
-    },
-    {
-      name: "head",
-      positions: [null], // Meaning it just gets placed into the SVG with no translation
       scaleFatness: true,
     },
     {
