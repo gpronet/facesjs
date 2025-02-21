@@ -1,8 +1,13 @@
+import {
+  addClassToElement,
+  addWrapper,
+  getChildElement,
+} from "./display-utils";
 import override from "./override.js";
 import svgs from "./svgs.js";
 import { FaceConfig, Overrides } from "./types";
 
-const addWrapper = (svgString: string) => `<g>${svgString}</g>`;
+//const addWrapper = (svgString: string) => `<g>${svgString}</g>`;
 
 const addTransform = (element: SVGGraphicsElement, newTransform: string) => {
   const oldTransform = element.getAttribute("transform");
@@ -96,6 +101,7 @@ const translate = (
 const fatScale = (fatness: number) => 0.8 + 0.2 * fatness;
 
 type FeatureInfo = {
+  placeBeginning?: any;
   name: Exclude<keyof FaceConfig, "fatness" | "teamColors">;
   positions: [null] | [number, number][];
   scaleFatness?: true;
@@ -192,9 +198,18 @@ const drawFeature = (
   );
 
   const bodySize = face.body.size !== undefined ? face.body.size : 1;
+  const insertPosition: "afterbegin" | "beforeend" = info.placeBeginning
+    ? "afterbegin"
+    : "beforeend";
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
+
+    const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
+
+    for (const granchildElement of childElement.children) {
+      addClassToElement(granchildElement as SVGGraphicsElement, feature.id);
+    }
 
     const position = info.positions[i];
 
@@ -241,6 +256,16 @@ const drawFeature = (
       const distance = (78 - 47) * (1 - face.fatness);
       // @ts-expect-error
       translate(svg.lastChild, distance, 0, "left", "top");
+    }
+
+    if (info.name === "earring") {
+      translate(
+        childElement as SVGGraphicsElement,
+        0,
+        +face.ear.size || 0,
+        "left",
+        "top",
+      );
     }
   }
 
@@ -376,7 +401,7 @@ export const display = (
         [350, 360] as [number, number],
       ],
       scaleFatness: true,
-      //placeBeginning: true,
+      placeBeginning: true,
     },
   ];
 
