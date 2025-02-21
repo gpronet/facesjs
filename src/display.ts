@@ -335,21 +335,65 @@ export const display = (
       scaleFatness: true,
     },
     {
-      name: "hairBg",
-      positions: [null],
-      scaleFatness: true,
-    },
-    {
-      name: "body",
-      positions: [null],
-    },
-    {
       name: "blemish",
       positions: [null],
     },
     {
-      name: "jersey",
+      name: "eyeLine",
       positions: [null],
+    },
+    {
+      name: "smileLine",
+      positions: [
+        [150, 435],
+        [250, 435],
+      ],
+    },
+    {
+      name: "miscLine",
+      positions: [null],
+    },
+    {
+      name: "eye",
+      positions: [
+        [140, 310],
+        [260, 310],
+      ],
+    },
+    {
+      name: "eyebrow",
+      positions: [
+        [140, 270],
+        [260, 270],
+      ],
+    },
+    {
+      name: "nose",
+      positions: [[200, 370]],
+    },
+    {
+      name: "mouth",
+      positions: [[200, 440]],
+    },
+    {
+      name: "facialHair",
+      positions: [null],
+      scaleFatness: true,
+    },
+    {
+      name: "hair",
+      positions: [null],
+      scaleFatness: true,
+    },
+    {
+      name: "glasses",
+      positions: [null],
+      scaleFatness: true,
+    },
+    {
+      name: "accessories",
+      positions: [null],
+      scaleFatness: true,
     },
     {
       name: "earring",
@@ -369,59 +413,16 @@ export const display = (
       scaleFatness: true,
     },
     {
-      name: "eyeLine",
+      name: "body",
+      positions: [null],
+    },
+
+    {
+      name: "jersey",
       positions: [null],
     },
     {
-      name: "smileLine",
-      positions: [
-        [150, 435],
-        [250, 435],
-      ],
-    },
-    {
-      name: "miscLine",
-      positions: [null],
-    },
-    {
-      name: "facialHair",
-      positions: [null],
-      scaleFatness: true,
-    },
-    {
-      name: "eye",
-      positions: [
-        [140, 310],
-        [260, 310],
-      ],
-    },
-    {
-      name: "eyebrow",
-      positions: [
-        [140, 270],
-        [260, 270],
-      ],
-    },
-    {
-      name: "mouth",
-      positions: [[200, 440]],
-    },
-    {
-      name: "nose",
-      positions: [[200, 370]],
-    },
-    {
-      name: "hair",
-      positions: [null],
-      scaleFatness: true,
-    },
-    {
-      name: "glasses",
-      positions: [null],
-      scaleFatness: true,
-    },
-    {
-      name: "accessories",
+      name: "hairBg",
       positions: [null],
       scaleFatness: true,
     },
