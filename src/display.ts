@@ -339,10 +339,6 @@ export const display = (
       positions: [null],
     },
     {
-      name: "blemish",
-      positions: [null],
-    },
-    {
       name: "jersey",
       positions: [null],
     },
@@ -378,6 +374,10 @@ export const display = (
         [150, 435],
         [250, 435],
       ],
+    },
+    {
+      name: "blemish",
+      positions: [null],
     },
     {
       name: "miscLine",
