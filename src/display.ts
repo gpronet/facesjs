@@ -258,6 +258,28 @@ const drawFeature = (
       translate(svg.lastChild, distance, 0, "left", "top");
     }
 
+    if (info.name === "eye") {
+      for (const granchildElement of childElement.children) {
+        if (granchildElement.getAttribute("fill") === `$[eyeReflection${i}]`) {
+          granchildElement.setAttribute("fill", "white");
+          if (i === 1) {
+            const parentTransform =
+              childElement.getAttribute("transform") || "";
+            const rotateRegex = /rotate\(([^)]+)\)/;
+            const match = parentTransform.match(rotateRegex);
+            const parentRotate = match ? match[0] : null;
+            // @ts-ignore
+            addTransform(granchildElement as SVGGraphicsElement, parentRotate);
+          }
+        } else if (
+          granchildElement.getAttribute("fill") ===
+          `$[eyeReflection${(i + 1) % 2}]`
+        ) {
+          granchildElement.setAttribute("fill", "none");
+        }
+      }
+    }
+
     if (info.name === "earring") {
       translate(
         childElement as SVGGraphicsElement,
@@ -317,8 +339,21 @@ export const display = (
       positions: [null],
     },
     {
+      name: "blemish",
+      positions: [null],
+    },
+    {
       name: "jersey",
       positions: [null],
+    },
+    {
+      name: "earring",
+      positions: [
+        [50, 360] as [number, number],
+        [350, 360] as [number, number],
+      ],
+      scaleFatness: true,
+      placeBeginning: true,
     },
     {
       name: "ear",
@@ -389,19 +424,6 @@ export const display = (
       name: "accessories",
       positions: [null],
       scaleFatness: true,
-    },
-    {
-      name: "blemish",
-      positions: [null],
-    },
-    {
-      name: "earring",
-      positions: [
-        [50, 360] as [number, number],
-        [350, 360] as [number, number],
-      ],
-      scaleFatness: true,
-      placeBeginning: true,
     },
   ];
 
