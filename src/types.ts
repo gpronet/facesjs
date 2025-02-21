@@ -40,3 +40,19 @@ export type FeatureInfo = {
 };
 
 export type FaceConfig = ReturnType<typeof generate>;
+
+export type HSL = {
+  h: number;
+  s: number;
+  l: number;
+};
+
+export type RGB = {
+  r: number;
+  g: number;
+  b: number;
+};
+
+export type RGBA = RGB & { a: number };
+
+export type HEX = string;
