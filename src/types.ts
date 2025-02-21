@@ -22,6 +22,8 @@ export type Feature =
   | "miscLine"
   | "mouth"
   | "nose"
+  | "blemish"
+  | "earring"
   | "smileLine";
 
 export type Race = "asian" | "black" | "brown" | "white";

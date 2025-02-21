@@ -169,6 +169,18 @@ export const generate = (
     accessories: {
       id: Math.random() < 0.2 ? getID("accessories", gender) : "none",
     },
+    blemish: {
+      id: getID("blemish", gender),
+      // mirror: isFlipped(),
+      // flip: isFlipped(),
+      // angle: randomInt(-90, 90, true),
+    },
+    earring: {
+      id:
+        (gender === "female" ? 1 : 0.1) * Math.random() > 0.25
+          ? getID("earring", gender)
+          : "none",
+    },
   };
 
   override(face, overrides);

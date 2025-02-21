@@ -190,6 +190,7 @@ export const genders = {
     "glasses2-black": "both",
     "glasses2-primary": "both",
     "glasses2-secondary": "both",
+    specs: "both",
     none: "both",
   },
   hair: {
@@ -369,5 +370,21 @@ export const genders = {
     line3: "both",
     line4: "both",
     none: "both",
+  },
+  earring: {
+    none: "both",
+    "earring-hanging-diamond": "female",
+    "earring-silver-diamond": "female",
+    "earring-silver": "female",
+    "earring-stud": "both",
+  },
+  blemish: {
+    none: "both",
+    "eye-scar-left": "male",
+    "eye-scar-right": "male",
+    "chin-mole": "both",
+    "cheek-mole": "both",
+    "chin-mole-left": "both",
+    "cheek-mole-left": "both",
   },
 };

@@ -1,6 +1,6 @@
 import override from "./override.js";
 import svgs from "./svgs.js";
-import { FaceConfig, Overrides } from "./types.js";
+import { FaceConfig, Overrides } from "./types";
 
 const addWrapper = (svgString: string) => `<g>${svgString}</g>`;
 
@@ -364,6 +364,19 @@ export const display = (
       name: "accessories",
       positions: [null],
       scaleFatness: true,
+    },
+    {
+      name: "blemish",
+      positions: [null],
+    },
+    {
+      name: "earring",
+      positions: [
+        [50, 360] as [number, number],
+        [350, 360] as [number, number],
+      ],
+      scaleFatness: true,
+      //placeBeginning: true,
     },
   ];
 
