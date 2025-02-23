@@ -179,6 +179,8 @@ const drawFeature = (
     featureSVGString = featureSVGString.replace("$[headShave]", feature.shave);
   }
 
+  featureSVGString = featureSVGString.replace("$[eyeColor]", face.eye.color);
+
   featureSVGString = featureSVGString.replace("$[skinColor]", face.body.color);
   featureSVGString = featureSVGString.replace(
     /\$\[hairColor\]/g,

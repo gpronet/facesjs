@@ -91,6 +91,7 @@ export const generate = (
   })();
   const skinColor = palette.skin[randomInt(0, palette.skin.length)];
   const hairColor = palette.hair[randomInt(0, palette.hair.length)];
+  const eyeColor = palette.hair[randomInt(0, palette.hair.length)];
   const isFlipped = Math.random() < 0.5;
 
   const face = {
@@ -142,7 +143,7 @@ export const generate = (
     facialHair: {
       id: Math.random() < 0.5 ? getID("facialHair", gender) : "none",
     },
-    eye: { id: getID("eye", gender), angle: eyeAngle },
+    eye: { id: getID("eye", gender), angle: eyeAngle, color: eyeColor },
     eyebrow: {
       id: getID("eyebrow", gender),
       angle: randomInt(-15, 20, true),
