@@ -280,7 +280,7 @@ const drawFeature = (
       }
     }
 
-    if (info.name === "earring") {
+    /* if (info.name === "earring") {
       translate(
         childElement as SVGGraphicsElement,
         0,
@@ -288,7 +288,7 @@ const drawFeature = (
         "left",
         "top",
       );
-    }
+    }*/
   }
 
   if (
