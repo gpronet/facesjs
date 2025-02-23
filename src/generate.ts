@@ -36,17 +36,83 @@ export const colors = {
       "#e9c67b",
       "#D7BF91",
     ],
+    eye: [
+      "#634e34",
+      "#2e536f",
+      "#3d671d",
+      "#1c7847",
+      "#497665",
+      "#000000",
+      "#81badd",
+      "#81b1ce",
+      "#579ec9",
+      "#989696",
+      "#7c7c7c",
+      "#0D5176",
+      "#0D98BA",
+      "#A1CAF1",
+      "#8D9B87",
+    ],
   },
   asian: {
     // https://imgur.com/a/GrBuWYw
     skin: ["#fedac7", "#f0c5a3", "#eab687"],
     hair: ["#272421", "#0f0902"],
+    eye: [
+      "#634e34",
+      "#2e536f",
+      "#3d671d",
+      "#1c7847",
+      "#497665",
+      "#000000",
+      "#81badd",
+      "#81b1ce",
+      "#579ec9",
+      "#989696",
+      "#7c7c7c",
+      "#0D5176",
+      "#0D98BA",
+      "#A1CAF1",
+      "#8D9B87",
+    ],
   },
   brown: {
     skin: ["#bb876f", "#aa816f", "#a67358"],
     hair: ["#272421", "#1c1008"],
+    eye: [
+      "#634e34",
+      "#2e536f",
+      "#3d671d",
+      "#1c7847",
+      "#497665",
+      "#000000",
+      "#81badd",
+      "#81b1ce",
+      "#579ec9",
+      "#989696",
+      "#7c7c7c",
+      "#0D5176",
+      "#0D98BA",
+      "#A1CAF1",
+      "#8D9B87",
+    ],
   },
-  black: { skin: ["#ad6453", "#74453d", "#5c3937"], hair: ["#272421"] },
+  black: {
+    skin: ["#ad6453", "#74453d", "#5c3937"],
+    hair: ["#272421"],
+    eye: [
+      "#634e34",
+      "#2e536f",
+      "#3d671d",
+      "#1c7847",
+      "#497665",
+      "#000000",
+      "#0D5176",
+      "#0D98BA",
+      "#A1CAF1",
+      "#8D9B87",
+    ],
+  },
 };
 
 const defaultTeamColors: TeamColors = ["#89bfd3", "#7a1319", "#07364f"];
@@ -91,7 +157,7 @@ export const generate = (
   })();
   const skinColor = palette.skin[randomInt(0, palette.skin.length)];
   const hairColor = palette.hair[randomInt(0, palette.hair.length)];
-  const eyeColor = palette.hair[randomInt(0, palette.hair.length)];
+  const eyeColor = palette.hair[randomInt(0, palette.eye.length)];
   const isFlipped = Math.random() < 0.5;
 
   const face = {
