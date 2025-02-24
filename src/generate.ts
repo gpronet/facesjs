@@ -157,7 +157,7 @@ export const generate = (
   })();
   const skinColor = palette.skin[randomInt(0, palette.skin.length)];
   const hairColor = palette.hair[randomInt(0, palette.hair.length)];
-  const eyeColor = palette.hair[randomInt(0, palette.eye.length)];
+  const eyeColor = palette.eye[randomInt(0, palette.eye.length)];
   const isFlipped = Math.random() < 0.5;
 
   const face = {
