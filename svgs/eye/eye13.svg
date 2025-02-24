@@ -3,7 +3,7 @@
 		tspan { white-space:pre }
 		.white { fill: #f5f3ee } 
 		.black { fill: #000000;}
-		.eyeColor{stroke:$[eyeColor];stroke-width:4}
+		.eyeColor{stroke:$[eyeColor];stroke-width:5}
 	</style>
 	<g id="eye">
 		<path id="Shape 1" class="white" d="M5.55 28.46C5.55 28.46 17.08 11.77 40 11.77C62.92 11.77 68.58 28.46 68.58 28.46C68.58 28.46 62.85 39.92 39.93 39.92C17.01 39.92 5.55 28.46 5.55 28.46Z" />
