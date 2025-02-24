@@ -5,7 +5,7 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
 	.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.eyeColor{stroke:green;stroke-width:4;}
+	.eyeColor{stroke:$[eyeColor];stroke-width:4;}
 </style>
 <path class="st0" d="M182.8,349.5c0.6-1.5,5.9-15.2-2.5-25.3c-2.9-3.5-6.7-5.6-7.7-6.2c-2.9-1.5-8.9-4.1-16.6-3.5
 	c-7.6,0.6-12.7,4-14.5,5.2c-12.5,8.5-12.1,23.4-12.1,25.3"/>
