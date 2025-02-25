@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 56" width="66" height="56">
+	<defs>
+		<radialGradient id="myGradient">
+		  <stop offset="40%" stop-color="black" />
+		  <stop offset="60%" stop-color="$[eyeColor]" />
+		</radialGradient>
+		<pattern id="star" viewBox="0,0,10,10" width="20%" height="20%">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
 	<style>
 		tspan { white-space:pre }
 		.shp0 { fill: #ffffff;stroke: #000000;stroke-width: 5 } 
 		.shp1 { fill: #000000;stroke: $[eyeColor];stroke-width: 5 } 
 	</style>
 	<g id="eye1">
-		<path id="Shape 7" class="shp0" d="M63 43C63 43 58 53 28 53C-2 53 3 43 3 43C3 43 3 3 33 3C63 3 63 43 63 43Z" />
-		<path id="Shape 7" class="shp1" d="M33 38C23 38 23 18 33 18C43 18 43 38 33 38Z" />
+		<path class="shp0" d="M63 43C63 43 58 53 28 53C-2 53 3 43 3 43C3 43 3 3 33 3C63 3 63 43 63 43Z" />
+		<path fill="url('#myGradient')" stroke="#272727" stroke-width="0.5" d="M33 38C23 38 23 18 33 18C43 18 43 38 33 38Z" />
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M33 38C23 38 23 18 33 18C43 18 43 38 33 38Z" />
 	</g>
 </svg>
