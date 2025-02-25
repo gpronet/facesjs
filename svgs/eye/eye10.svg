@@ -25,8 +25,11 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs1262" />
+	<defs>
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
   <sodipodi:namedview
      inkscape:current-layer="eye3"
      inkscape:window-maximized="1"
@@ -51,11 +54,11 @@
      id="style1248">
 		tspan { white-space:pre }
 		.shp0 { fill: none;stroke: #000000;stroke-linecap:round;stroke-linejoin:round;stroke-width: 5 } 
-		.shp1 { fill: #ffffff;stroke: #000000;stroke-linecap:round;stroke-linejoin:round;stroke-width: 5 } 
-		.shp2 { fill: #000000;stroke: $[eyeColor];stroke-linecap:round;stroke-linejoin:round;stroke-width: 4 } 
-	</style>
-  <g
-     id="eye3">
+		.shp1 { fill: #ffffff;stroke: #000000;stroke-linecap:round;stroke-linejoin:round;stroke-width: 5 }
+		.black{fill:#000000;}
+		.eyeColor { fill:$[eyeColor];stroke:#272727;stroke-width:0.5}
+  </style>
+  <g id="eye3">
     <path
        sodipodi:nodetypes="sccs"
        d="m 259.00957,349.53965 c -13.86594,-0.39802 -24.70891,-6.08865 -24.70891,-19.04974 10.69975,-18.06303 40.38566,-18.35838 51.24971,-0.27478 4.41424,12.20745 -11.60754,19.75317 -26.5408,19.32452 z"
@@ -65,9 +68,8 @@
        d=""
        class="shp1"
        id="path1253" />
-    <path
-       d="m 259.55151,325.17695 c -10,0 -10,15 0,15 10,0 10,-15 0,-15 z"
-       class="shp2"
-       id="path1255" />
+    <path d="m259.4618 324.2123c-12 0-12 18 0 18 12 0 12-18 0-18z" class="eyeColor" id="path1255" />
+	<path class="black" d="M259.7 337.7C257.044 337.7 254.9 335.556 254.9 332.9 254.9 330.244 257.044 328.1 259.7 328.1 262.356 328.1 264.5 330.244 264.5 332.9 264.5 335.556 262.356 337.7 259.7 337.7Z" />
+    <path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="m259.4618 324.2123c-12 0-12 18 0 18 12 0 12-18 0-18z" />
   </g>
 </svg>

@@ -1,13 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 50" width="75" height="50">
+	<defs>
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
 	<style>
 		tspan { white-space:pre }
-		.white { fill: #f5f3ee } 
-		.black { fill: #000000 }
-		.eyeColor {stroke:$[eyeColor];stroke-width:5}
+		.white { fill: #f5f3ee }
+		.black{fill:#000000;}
+		.eyeColor { fill:$[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	<g id="eye">
 		<path id="white" class="white" d="M5 20C5 20 17.08 11.77 40 11.77C62.92 11.77 70 30 70 30C70 30 62.85 39.92 39.93 39.92C17.01 39.92 5 20 5 20Z" />
-		<path id="black" class="black eyeColor" d="M39.93 33.04C33.59 33.04 28.47 27.92 28.47 21.58C28.47 15.25 33.59 10.12 39.93 10.12C46.27 10.12 51.39 15.25 51.39 21.58C51.39 27.92 46.27 33.04 39.93 33.04Z" />
+		<path id="black" class="eyeColor" d="M39.93 33.04C33.59 33.04 28.47 27.92 28.47 21.58C28.47 15.25 33.59 10.12 39.93 10.12C46.27 10.12 51.39 15.25 51.39 21.58C51.39 27.92 46.27 33.04 39.93 33.04Z" />
+		
+		<path class="black" d="M39.965 27.52C36.795 27.52 34.235 24.96 34.235 21.79 34.235 18.625 36.795 16.06 39.965 16.06 43.135 16.06 45.695 18.625 45.695 21.79 45.695 24.96 43.135 27.52 39.965 27.52Z" />
+		
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M39.93 33.04C33.59 33.04 28.47 27.92 28.47 21.58C28.47 15.25 33.59 10.12 39.93 10.12C46.27 10.12 51.39 15.25 51.39 21.58C51.39 27.92 46.27 33.04 39.93 33.04Z" />
 		<path id="black" class="black" d="M5 20C2.13 17.13 17.2 10.45 40 8.1C70 5 72.87 27.13 70 30C67.13 32.87 62.92 16.27 40 16.27C17.08 16.27 7.87 22.87 5 20Z" />
 		
 	</g>

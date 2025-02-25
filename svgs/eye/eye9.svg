@@ -1,11 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+	<defs>
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
 	<style>
 		tspan { white-space:pre }
 		.shp0 { fill: #ffffff;stroke: #000000;stroke-width: 5 } 
-		.shp1 { fill: #000000;stroke: $[eyeColor];stroke-width: 3 } 
+		.black{fill:#000000;}
+		.eyeColor { fill:$[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	<g id="eye9">
 		<path id="Shape 10" class="shp0" d="M240 340C240 336 234 320 264 320C284 320 300 328 300 332C300 336 288 344 280 344C276 344 240 344 240 340Z" />
-		<path id="Shape 10" class="shp1" d="M268 340C264.68 340 262 336.42 262 332C262 327.58 264.68 324 268 324C271.32 324 274 327.58 274 332C274 336.42 271.32 340 268 340Z" />
+		<path class="eyeColor" d="M267.8 341C264.148 341 261.2 337.062 261.2 332.2 261.2 327.338 264.148 323.4 267.8 323.4 271.452 323.4 274.4 327.338 274.4 332.2 274.4 337.062 271.452 341 267.8 341Z" />
+		<path id="Shape 10" class="black" d="M267.7 336.7C265.044 336.7 262.9 334.556 262.9 331.9 262.9 329.244 265.044 327.1 267.7 327.1 270.356 327.1 272.5 329.244 272.5 331.9 272.5 334.556 270.356 336.7 267.7 336.7Z" />
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M267.8 341C264.148 341 261.2 337.062 261.2 332.2 261.2 327.338 264.148 323.4 267.8 323.4 271.452 323.4 274.4 327.338 274.4 332.2 274.4 337.062 271.452 341 267.8 341Z" />
 	</g>
 </svg>
