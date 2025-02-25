@@ -4,7 +4,7 @@
 		  <stop offset="40%" stop-color="black" />
 		  <stop offset="60%" stop-color="lime" />
 		</radialGradient>
-		<pattern id="star" width="0.1" height="0.1">
+		<pattern id="star" viewBox="0,0,10,10" width="0.1" height="0.1">
 		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
 		</pattern>
 	</defs>
