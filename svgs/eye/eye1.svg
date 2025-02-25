@@ -11,8 +11,8 @@
 	</style>
 	<g id="eye1">
 		<path class="shp0" d="M63 43C63 43 58 53 28 53C-2 53 3 43 3 43C3 43 3 3 33 3C63 3 63 43 63 43Z" />
-		<path class="eyeColor" d="M33 38C23 38 23 18 33 18C43 18 43 38 33 38Z" />
+		<path class="eyeColor" d="M33.6 39.6C21.6 39.6 21.6 15.6 33.6 15.6 45.6 15.6 45.6 39.6 33.6 39.6Z" />
 		<path class="shp1" d="M33 32C28 32 28 22 33 22 38 22 38 32 33 32Z" />
-		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M33 38C23 38 23 18 33 18C43 18 43 38 33 38Z" />
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M33.6 39.6C21.6 39.6 21.6 15.6 33.6 15.6 45.6 15.6 45.6 39.6 33.6 39.6Z" />
 	</g>
 </svg>

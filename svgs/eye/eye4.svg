@@ -9,13 +9,13 @@
 		.shp0 { fill: #ffffff;stroke: #000000;stroke-width: 5 } 
 		.shp1 { fill: #000000;stroke: $[eyeColor];stroke-linecap:round;stroke-linejoin:round;stroke-width: 4 } 
 		.black{fill:#000000;}
-		.eyeColor { fill: $[eyeColor];stroke:#272727;stroke-width:0.5}
+		.eyeColor { fill:$[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	<g id="eye4">
 		<path class="shp0" d="M68.08 23.19C68.08 23.19 69.97 38.07 40.21 41.86C15.41 45.02 6.66 15.89 6.03 10.93C25.87 8.4 65.55 3.35 68.08 23.19Z" />
-		<path class="eyeColor" d="M39.04 16.81C48.96 15.54 50.85 30.42 40.93 31.69C31.01 32.95 29.12 18.07 39.04 16.81Z" />
+		<path class="eyeColor" d="M38.848 15.172C50.752 13.648 53.02 31.504 41.116 33.028 29.212 34.54 26.944 16.684 38.848 15.172Z" />
 		<path class="black" d="M39.52 20.405C44.48 19.77 45.425 27.21 40.465 27.845 35.505 28.475 34.56 21.035 39.52 20.405Z" />
 		
-		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M39.04 16.81C48.96 15.54 50.85 30.42 40.93 31.69C31.01 32.95 29.12 18.07 39.04 16.81Z" />
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M38.848 15.172C50.752 13.648 53.02 31.504 41.116 33.028 29.212 34.54 26.944 16.684 38.848 15.172Z" />
 	</g>
 </svg>
