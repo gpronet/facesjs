@@ -8,7 +8,7 @@
 		tspan { white-space:pre }
 		.white { fill: #f5f3ee }
 		.black{fill:#000000;}
-		.eyeColor { fill:lime;stroke:#272727;stroke-width:0.5}
+		.eyeColor { fill:$[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	
 	<g id="eye">
