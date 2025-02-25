@@ -391,6 +391,11 @@ export const display = (
       scaleFatness: true,
     },
     {
+      name: "hair",
+      positions: [null],
+      scaleFatness: true,
+    },
+    {
       name: "eye",
       positions: [
         [140, 310],
@@ -411,11 +416,6 @@ export const display = (
     {
       name: "nose",
       positions: [[200, 370]],
-    },
-    {
-      name: "hair",
-      positions: [null],
-      scaleFatness: true,
     },
     {
       name: "glasses",
