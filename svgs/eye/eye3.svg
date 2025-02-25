@@ -2,11 +2,7 @@
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 600" style="enable-background:new 0 0 400 600;" xml:space="preserve">
 	<defs>
-		<radialGradient id="myGradient">
-		  <stop offset="40%" stop-color="black" />
-		  <stop offset="60%" stop-color="$[eyeColor]" />
-		</radialGradient>
-		<pattern id="star" viewBox="0,0,10,10" width="20%" height="20%">
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
 		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
 		</pattern>
 	</defs>
@@ -14,13 +10,16 @@
 		.st0{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
 		.st1{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
 		.white{fill:#FFFFFF;}
-		.st2{stroke:$[eyeColor];stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
+		.black{fill:#000000;}
+		.eyeColor { fill: $[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	<g id="eye3">
 		<path class="st0" d="M265,360c-13.8,0-25-11.2-25-25c0-13.8,11.2-25,25-25c13.8,0,25,11.2,25,25 C290,348.8,278.8,360,265,360z"/>
 		<path class="white" d="M265,360c-13.8,0-25-11.2-25-25 c0-5,0-5,0-5h50c0,0,0,0,0,5C290,348.8,278.8,360,265,360z"/>
-		<path fill="url('#myGradient')" stroke="#272727" stroke-width="0.5" d="M265,330c-10,0-10,15,0,15S275,330,265,330z"/>
-		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M265,330c-10,0-10,15,0,15S275,330,265,330z"/>
+		<path class="eyeColor" d="M265 328c-12 0-12 18 0 18S277 328 265 328z"/>
+		<path class="black" d="M265 332c-6 0-6 9 0 9S271 332 265 332z"/>
+
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M265 328c-12 0-12 18 0 18S277 328 265 328z"/>
 		<path class="st1" d="M265,360c-13.8,0-25-11.2-25-25 c0-5,0-5,0-5h50c0,0,0,0,0,5C290,348.8,278.8,360,265,360z"/>
 	</g>
 </svg>
