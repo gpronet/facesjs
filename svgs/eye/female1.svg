@@ -7,10 +7,9 @@
 		</pattern>
 	</defs>
 	<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;}
-	.st1{stroke:$[eyeColor];stroke-width:5;}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;}	
 	.black{fill:#000000;}
-	.eyeColor { fill:lime;}
+	.eyeColor { fill:$[eyeColor];}
 	</style>
 	<g id="eye1">
 		<path id="Shape_7" class="st0" d="M208,315.3c0,0-5,10-35,10s-25-10-25-10s0-40,30-40S208,315.3,208,315.3z"/>
