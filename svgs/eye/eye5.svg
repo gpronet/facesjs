@@ -1,13 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 50" width="85" height="50">
+	<defs>
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
 	<style>
 		tspan { white-space:pre }
-		.shp0 { fill: #ffffff } 
-		.shp1 { fill: #000000;stroke:$[eyeColor];stroke-width: 3 } 
-		.shp2 { fill: none;stroke: #000000;stroke-width: 5 } 
+		.shp0 { fill: #ffffff }
+		.shp2 { fill: none;stroke: #000000;stroke-width: 5 }
+		.black{fill:#000000;}
+		.eyeColor { fill: $[eyeColor];stroke:#272727;stroke-width:0.5}
 	</style>
 	<g id="eye5">
 		<path id="White" class="shp0" d="M73.67 39.73C77.59 29.26 76.02 14.35 76.02 14.35C76.02 14.35 40.16 8.08 30.22 9.13C20.27 10.17 5.88 16.72 5.88 16.72C5.88 16.72 4.44 26.93 13.48 41.06L73.67 39.73Z" />
-		<path id="Shape 9" class="shp1" d="M45.8 37.65C41.67 38.08 37.63 31.77 36.76 23.52 35.89 15.27 38.52 8.25 43 9 46.77 7.38 50.81 13.69 51.68 21.94 52.55 30.19 49.92 37.21 45.8 37.65Z" />
+		<path id="Shape 9" class="eyeColor" d="M45.8 37.65C41.67 38.08 37.63 31.77 36.76 23.52 35.89 15.27 38.52 8.25 43 9 46.77 7.38 50.81 13.69 51.68 21.94 52.55 30.19 49.92 37.21 45.8 37.65Z" />
+		<path class="black" d="M44.9 30.825C42.835 31.04 40.815 27.885 40.38 23.76 39.945 19.635 41.26 16.125 43.5 16.5 45.385 15.69 47.405 18.845 47.84 22.97 48.275 27.095 46.96 30.605 44.9 30.825Z" />
+		
+		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M45.8 37.65C41.67 38.08 37.63 31.77 36.76 23.52 35.89 15.27 38.52 8.25 43 9 46.77 7.38 50.81 13.69 51.68 21.94 52.55 30.19 49.92 37.21 45.8 37.65Z" />
 		<path id="Outline" class="shp2" d="M73.67 39.73C78.12 34.24 76.02 14.35 76.02 14.35C76.02 14.35 40.16 8.08 30.22 9.13C20.27 10.17 5.88 16.72 5.88 16.72C5.88 16.72 7.45 31.64 13.48 41.06" />
 	</g>
 </svg>
