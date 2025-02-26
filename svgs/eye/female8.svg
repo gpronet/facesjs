@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 600" style="enable-background:new 0 0 400 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.eyeColor{stroke:$[eyeColor];stroke-width:4;}
-</style>
-<path class="st0" d="M230,309.5c-0.6-1.7-5.3-16-19.2-21c-7.9-2.8-17.7-2.3-24.6,3c-4.6,3.5-8.2,9-8.2,9c-1.7,2.5-2.5,4.4-3.2,5.8
-	c0,0-0.2,0.2-2.3,3.2l0,0"/>
-<ellipse class="eyeColor" cx="204.9" cy="300" rx="7.6" ry="8.4"/>
-<path class="st2" d="M162,300c0.2,0.9,1.6,6.4,5.7,8.8c2.5,1.4,4.7,1.1,5.7,0.8"/>
+	<defs>
+		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
+	<style type="text/css">
+		.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+		.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+		.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+		.black{fill:#000000;}
+		.eyeColor {fill:$[eyeColor]}
+	</style>
+	<path class="st0" d="M230,309.5c-0.6-1.7-5.3-16-19.2-21c-7.9-2.8-17.7-2.3-24.6,3c-4.6,3.5-8.2,9-8.2,9c-1.7,2.5-2.5,4.4-3.2,5.8
+		c0,0-0.2,0.2-2.3,3.2l0,0"/>
+	<ellipse class="eyeColor" cx="204.9" cy="300" rx="7.6" ry="8.4"/>
+	<ellipse fill="url(#star)" opacity="0.7" stroke="#272727" stroke-width="0.5" cx="204.9" cy="300" rx="7.6" ry="8.4"/>
+	<path class="black" d="M204.408 295.92c5.544-.728 6.608 7.616 1.064 8.344C199.928 304.936 198.864 296.592 204.408 295.92z"/>
+	<path class="st2" d="M162,300c0.2,0.9,1.6,6.4,5.7,8.8c2.5,1.4,4.7,1.1,5.7,0.8"/>
 </svg>
