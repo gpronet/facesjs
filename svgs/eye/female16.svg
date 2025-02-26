@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 600" style="enable-background:new 0 0 400 600;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
-	.eyeColor{stroke:$[eyeColor];stroke-width:4;}
-</style>
-<path class="st0" d="M209.3,209.3c-0.3,2.7-2.3,16.9-10.9,20.3c-1.4,0.6-2.9,0.8-17-2.9c-13-3.4-14.9-4.3-16.4-6.5
-	c-3.1-4.6-2-11-0.7-15.2"/>
-<path class="st1" d="M212,209.3c-17.3-1.7-34.5-3.4-51.8-5.1"/>
-<path class="st0" d="M153.4,197c0.1,0.7,0.6,3.1,2.7,5.1c2.2,2.1,4.8,2.2,5.5,2.2"/>
-<path class="st0" d="M151,206.1c0.4,0.8,1.7,3.5,4.7,5.1c3.2,1.7,6.1,0.9,6.9,0.7"/>
-<path class="eyeColor" d="M185.272 222.104l-5.312-.832c-1.856-.32-3.136-2.048-2.816-3.904l.64-4.032c.32-1.856 2.048-3.136 3.904-2.816l5.312.832c1.856.32 3.136 2.048 2.816 3.904l-.64 4.032C188.856 221.144 187.128 222.36 185.272 222.104z"/>
+	<defs>
+		<pattern id="star" x="10" y="10" width="2" height="2" patternUnits="userSpaceOnUse">
+		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
+		</pattern>
+	</defs>
+	<style type="text/css">
+		.st0{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+		.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+		.black{fill:#000000;}
+		.eyeColor {fill:$[eyeColor]}
+	</style>
+	<path class="st0" d="M209.3,209.3c-0.3,2.7-2.3,16.9-10.9,20.3c-1.4,0.6-2.9,0.8-17-2.9c-13-3.4-14.9-4.3-16.4-6.5
+		c-3.1-4.6-2-11-0.7-15.2"/>
+	<path class="st1" d="M212,209.3c-17.3-1.7-34.5-3.4-51.8-5.1"/>
+	<path class="st0" d="M153.4,197c0.1,0.7,0.6,3.1,2.7,5.1c2.2,2.1,4.8,2.2,5.5,2.2"/>
+	<path class="st0" d="M151,206.1c0.4,0.8,1.7,3.5,4.7,5.1c3.2,1.7,6.1,0.9,6.9,0.7"/>
+	<path class="eyeColor" d="M185.7992 223.3144l-5.8432-.9152c-2.0416-.352-3.4496-2.2528-3.0976-4.2944l.704-4.4352c.352-2.0416 2.2528-3.4496 4.2944-3.0976l5.8432.9152c2.0416.352 3.4496 2.2528 3.0976 4.2944l-.704 4.4352C189.7416 222.2584 187.8408 223.596 185.7992 223.3144z"/>
+	<path fill="url(#star)" opacity="0.3" stroke="#000000" stroke-width="0.5" d="M185.7992 223.3144l-5.8432-.9152c-2.0416-.352-3.4496-2.2528-3.0976-4.2944l.704-4.4352c.352-2.0416 2.2528-3.4496 4.2944-3.0976l5.8432.9152c2.0416.352 3.4496 2.2528 3.0976 4.2944l-.704 4.4352C189.7416 222.2584 187.8408 223.596 185.7992 223.3144z"/>
+	<ellipse class="black" cx="184" cy="217" rx="3.2" ry="3"/>
+	
 </svg>

@@ -7,13 +7,13 @@
 		</pattern>
 	</defs>
 	<style type="text/css">
-		.white{fill:#fff;stroke:#fff;}
+		.white{fill:white;stroke:white;stroke-width:3}
 		.st0{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
 		.st1{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
 		.black{fill:#000000;}
 		.eyeColor {fill:$[eyeColor]}
 	</style>
-	<path id="Shape 1" class="white" d="M172.196 380.0912C172.196 380.0912 180.4976 368.0744 197 368.0744 213.5024 368.0744 217.5776 380.0912 217.5776 380.0912 217.5776 380.0912 213.452 388.3424 196.9496 388.3424 180.4472 388.3424 172.196 380.0912 172.196 380.0912Z" />
+	<path id="Shape 1" class="white" d="M172 380C172 380 183.4976 367.0744 200 367.0744 216.5024 367.0744 220.5776 379.0912 220.5776 379.0912 220.5776 379.0912 216.452 387.3424 199.9496 387.3424 183.4472 387.3424 172 380 172 380Z" />
 	<path class="st0" d="M224,379.5c-0.9-2.3-2.7-6-6.2-9c-4.3-3.8-8.6-4.4-13.2-5c-11.9-1.6-21.1,2.7-23.8,4c-5.4,2.7-9.4,6.1-12.3,9"	/>
 	<ellipse class="eyeColor" cx="199.2" cy="378.5" rx="8.5" ry="9"/>
 	<ellipse fill="url(#star)" opacity="0.7" stroke="#272727" stroke-width="0.5" cx="199.2" cy="378.5" rx="8.5" ry="9"/>
