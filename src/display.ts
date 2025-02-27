@@ -161,6 +161,14 @@ const drawFeature = (
     }
   }
 
+  // Dont let huge muscles be outside bounds of suit/referee jersey
+  if (
+    ["suit", "suit2", "referee"].includes(face.jersey.id) &&
+    info.name == "body"
+  ) {
+    feature.id = "body";
+  }
+
   // @ts-expect-error
   let featureSVGString = svgs[info.name][feature.id];
 
@@ -216,7 +224,6 @@ const drawFeature = (
 
         //all children who have "fill="url(#id)""
         for (let idx2 = 0; idx2 < gElement.children.length; idx2++) {
-          //let tmpId = defs.children[idx].id;
           if (
             gElement.children[idx2].getAttribute("fill") ===
             "url(#" + tmpId + ")"
@@ -227,17 +234,11 @@ const drawFeature = (
             );
           }
           const gEl = gElement.children[idx2] as HTMLElement;
-          console.log(
-            gEl.style.fill,
-            gEl.style.fill == 'url("#' + tmpId + '")',
-            'url("#' + tmpId + '")',
-          );
           if (
             gEl.style.fill == 'url("#' + tmpId + '")' ||
             gEl.style.fill == "url(#" + tmpId + ")"
           ) {
             gEl.style.fill = "url(#" + tmpId + feature.id + ")";
-            //gEl.setAttribute("fill", "url(#" + tmpId + feature.id + ")");
           }
         }
       }
@@ -337,7 +338,7 @@ const drawFeature = (
     // @ts-expect-error
     scaleCentered(svg.lastChild, fatScale(face.fatness), 1);
   }
-  console.log(svg);
+  //console.log(svg);
 };
 
 export const display = (
