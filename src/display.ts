@@ -226,6 +226,14 @@ const drawFeature = (
               "url(#" + tmpId + feature.id + ")",
             );
           }
+
+          if (
+            (gElement.children[idx2] as HTMLElement).style.fill ===
+            "url(#" + tmpId + ")"
+          ) {
+            (gElement.children[idx2] as HTMLElement).style.fill =
+              "url(#" + tmpId + feature.id + ")";
+          }
         }
       }
     }
