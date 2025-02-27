@@ -163,6 +163,7 @@ const drawFeature = (
 
   // @ts-expect-error
   let featureSVGString = svgs[info.name][feature.id];
+  console.log(featureSVGString);
   if (!featureSVGString) {
     return;
   }
@@ -430,7 +431,6 @@ export const display = (
   ];
 
   for (const info of featureInfos) {
-    console.log(info);
     drawFeature(svg, face, info);
   }
 };
