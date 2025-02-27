@@ -163,7 +163,7 @@ const drawFeature = (
 
   // @ts-expect-error
   let featureSVGString = svgs[info.name][feature.id];
-  console.log(featureSVGString);
+
   if (!featureSVGString) {
     return;
   }
@@ -302,6 +302,7 @@ const drawFeature = (
     // @ts-expect-error
     scaleCentered(svg.lastChild, fatScale(face.fatness), 1);
   }
+  console.log(svg);
 };
 
 export const display = (
