@@ -207,8 +207,13 @@ const drawFeature = (
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
-
-    console.log(svg.lastChild?.firstChild);
+    const defs = svg.lastChild?.firstChild as HTMLElement;
+    if (defs.tagName === "defs") {
+      for (let idx = 0; idx < defs.children.length; i++) {
+        //let tmpId = defs.children[idx].id;
+        defs.children[idx].id += feature.id;
+      }
+    }
 
     const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
 
