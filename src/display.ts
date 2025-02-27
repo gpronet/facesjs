@@ -207,11 +207,26 @@ const drawFeature = (
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
+    const gElement = svg.lastChild as HTMLElement;
     const defs = svg.lastChild?.firstChild as HTMLElement;
     if (defs.tagName === "defs") {
       for (let idx = 0; idx < defs.children.length; idx++) {
-        //let tmpId = defs.children[idx].id;
+        const tmpId = defs.children[idx].id;
         defs.children[idx].id += feature.id;
+
+        //all children who have "fill="url(#id)""
+        for (let idx = 0; idx < gElement.children.length; idx++) {
+          //let tmpId = defs.children[idx].id;
+          if (
+            defs.children[idx].getAttribute("fill") ===
+            "url(#" + tmpId + ")"
+          ) {
+            defs.children[idx].setAttribute(
+              "fill",
+              "url(#" + tmpId + feature.id + ")",
+            );
+          }
+        }
       }
     }
 
