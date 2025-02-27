@@ -236,8 +236,8 @@ const drawFeature = (
             gEl.style.fill == 'url("#' + tmpId + '")' ||
             gEl.style.fill == "url(#" + tmpId + ")"
           ) {
-            gEl.style.fill = 'url("#' + tmpId + feature.id + '")';
-            gEl.setAttribute("fill", 'url(#"' + tmpId + feature.id + '")');
+            gEl.style.fill = "url(#" + tmpId + feature.id + ")";
+            gEl.setAttribute("fill", "url(#" + tmpId + feature.id + ")");
           }
         }
       }
