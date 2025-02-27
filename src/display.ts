@@ -226,22 +226,18 @@ const drawFeature = (
               "url(#" + tmpId + feature.id + ")",
             );
           }
+          const gEl = gElement.children[idx2] as HTMLElement;
           console.log(
-            ((gElement.children[idx2] as HTMLElement).style.fill,
-            gElement.children[idx2] as HTMLElement).style.fill ==
-              'url("#' + tmpId + '")',
+            gEl.style.fill,
+            gEl.style.fill == 'url("#' + tmpId + '")',
             'url("#' + tmpId + '")',
           );
           if (
-            (gElement.children[idx2] as HTMLElement).style.fill ==
-              'url("#' + tmpId + '")' ||
-            (gElement.children[idx2] as HTMLElement).style.fill ==
-              "url(#" + tmpId + ")"
+            gEl.style.fill == 'url("#' + tmpId + '")' ||
+            gEl.style.fill == "url(#" + tmpId + ")"
           ) {
-            gElement.children[idx2].setAttribute(
-              "fill",
-              "url(#" + tmpId + feature.id + ")",
-            );
+            gEl.style.fill = 'url("#' + tmpId + feature.id + '")';
+            gEl.setAttribute("fill", 'url(#"' + tmpId + feature.id + '")');
           }
         }
       }
