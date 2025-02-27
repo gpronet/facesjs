@@ -301,7 +301,7 @@ const drawFeature = (
     // @ts-expect-error
     scaleCentered(svg.lastChild, fatScale(face.fatness), 1);
   }
-  console.log(svg.lastChild);
+  console.log(svg);
 };
 
 export const display = (
