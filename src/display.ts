@@ -218,10 +218,10 @@ const drawFeature = (
         for (let idx2 = 0; idx2 < gElement.children.length; idx2++) {
           //let tmpId = defs.children[idx].id;
           if (
-            defs.children[idx2].getAttribute("fill") ===
+            gElement.children[idx2].getAttribute("fill") ===
             "url(#" + tmpId + ")"
           ) {
-            defs.children[idx2].setAttribute(
+            gElement.children[idx2].setAttribute(
               "fill",
               "url(#" + tmpId + feature.id + ")",
             );
