@@ -430,6 +430,7 @@ export const display = (
   ];
 
   for (const info of featureInfos) {
+    console.log(info);
     drawFeature(svg, face, info);
   }
 };
