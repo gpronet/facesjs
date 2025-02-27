@@ -215,13 +215,13 @@ const drawFeature = (
         defs.children[idx].id += feature.id;
 
         //all children who have "fill="url(#id)""
-        for (let idx = 0; idx < gElement.children.length; idx++) {
+        for (let idx2 = 0; idx2 < gElement.children.length; idx2++) {
           //let tmpId = defs.children[idx].id;
           if (
-            defs.children[idx].getAttribute("fill") ===
+            defs.children[idx2].getAttribute("fill") ===
             "url(#" + tmpId + ")"
           ) {
-            defs.children[idx].setAttribute(
+            defs.children[idx2].setAttribute(
               "fill",
               "url(#" + tmpId + feature.id + ")",
             );
