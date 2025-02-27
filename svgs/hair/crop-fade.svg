@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
 	<defs>
+		<linearGradient id="notused" gradientUnits="userSpaceOnUse"  x1="200" y1="100" x2="200" y2="310">
+			<stop offset="0" stop-color="rgba(0,0,0,0)"  />
+			<stop offset="1" stop-color="rgba(0,0,0,0)"  />
+		</linearGradient>
 		<linearGradient id="shortfade" gradientUnits="userSpaceOnUse"  x1="200" y1="100" x2="200" y2="310">
 			<stop offset="0" stop-color="rgba(0,0,0,.25)"  />
 			<stop offset="1" stop-color="rgba(0,0,0,0)"  />
