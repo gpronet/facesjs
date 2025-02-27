@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 50" width="75" height="50">
 	<defs>
 		<pattern id="a" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
-		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
 		</pattern>
 		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
 		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
