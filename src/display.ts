@@ -226,7 +226,7 @@ const drawFeature = (
               "url(#" + tmpId + feature.id + ")",
             );
           }
-          console.log((gElement.children[idx2] as HTMLElement).style);
+          console.log((gElement.children[idx2] as HTMLElement).style.fill);
           if (
             (gElement.children[idx2] as HTMLElement).style.fill ==
               'url("#' + tmpId + '")' ||
