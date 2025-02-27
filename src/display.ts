@@ -228,9 +228,9 @@ const drawFeature = (
           }
           console.log((gElement.children[idx2] as HTMLElement).style);
           if (
-            (gElement.children[idx2] as HTMLElement).style.fill ===
+            (gElement.children[idx2] as HTMLElement).style.fill ==
               'url("#' + tmpId + '")' ||
-            (gElement.children[idx2] as HTMLElement).style.fill ===
+            (gElement.children[idx2] as HTMLElement).style.fill ==
               "url(#" + tmpId + ")"
           ) {
             gElement.children[idx2].setAttribute(
