@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 50" width="75" height="50">
 	<defs>
-		<pattern id="a" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
+		<pattern id="a" x="0" y="0" width="0" height="0" patternUnits="userSpaceOnUse">
+			<polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
 		</pattern>
 		<pattern id="star" x="10" y="10" width="1" height="1" patternUnits="userSpaceOnUse">
 		  <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" />
@@ -20,6 +21,6 @@
 		
 		<path fill="url(#star)" opacity="0.3" stroke="#272727" stroke-width="0.5" d="M39.93 33.04C33.59 33.04 28.47 27.92 28.47 21.58C28.47 15.25 33.59 10.12 39.93 10.12C46.27 10.12 51.39 15.25 51.39 21.58C51.39 27.92 46.27 33.04 39.93 33.04Z" />
 		<path id="black" class="black" d="M5 20C2.13 17.13 17.2 10.45 40 8.1C70 5 72.87 27.13 70 30C67.13 32.87 62.92 16.27 40 16.27C17.08 16.27 7.87 22.87 5 20Z" />
-		
+		<path fill="url(#a)" visible="hidden" stroke="red" stroke-width="0.5" d="M39.93 33.04C33.59 33.04 28.47 27.92 28.47 21.58C28.47 15.25 33.59 10.12 39.93 10.12C46.27 10.12 51.39 15.25 51.39 21.58C51.39 27.92 46.27 33.04 39.93 33.04Z" />
 	</g>
 </svg>
