@@ -226,13 +226,15 @@ const drawFeature = (
               "url(#" + tmpId + feature.id + ")",
             );
           }
-
+          console.log((gElement.children[idx2] as HTMLElement).style);
           if (
             (gElement.children[idx2] as HTMLElement).style.fill ===
             "url(#" + tmpId + ")"
           ) {
-            (gElement.children[idx2] as HTMLElement).style.fill =
-              "url(#" + tmpId + feature.id + ")";
+            gElement.children[idx2].setAttribute(
+              "fill",
+              "url(#" + tmpId + feature.id + ")",
+            );
           }
         }
       }
