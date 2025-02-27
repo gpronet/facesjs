@@ -207,7 +207,6 @@ const drawFeature = (
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
-    console.log(svg);
     const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
 
     for (const granchildElement of childElement.children) {
@@ -302,7 +301,7 @@ const drawFeature = (
     // @ts-expect-error
     scaleCentered(svg.lastChild, fatScale(face.fatness), 1);
   }
-  //console.log(svg);
+  console.log(svg);
 };
 
 export const display = (
