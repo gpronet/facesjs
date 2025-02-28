@@ -300,6 +300,7 @@ export const genders = {
     suit: "both",
     suit2: "both",
     "suit-striped-tie": "both",
+    "pilot-apparel-1": "both",
     referee: "both",
     "basketball-panel": "both",
     "basketball-pinstripe": "both",
