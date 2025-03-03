@@ -32,7 +32,7 @@ const scaleStrokeWidthAndChildren = (
   if (element.tagName === "style" || element.nodeName === "#text") {
     return;
   }
-  console.log(element);
+  //console.log(element);
   const strokeWidth = element.getAttribute("stroke-width");
   if (strokeWidth) {
     element.setAttribute(
