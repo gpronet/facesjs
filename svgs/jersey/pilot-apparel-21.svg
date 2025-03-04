@@ -27,7 +27,7 @@
       }
 
       .cls-3 {
-        stroke: #fff;
+        stroke: $[secondary];
       }
 
       .cls-6 {
@@ -39,7 +39,7 @@
       }
 
       .cls-8 {
-        fill: #9a0000;
+        fill: $[accent];
       }
 
       .cls-9 {
