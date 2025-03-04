@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #bc201f;
+        fill: $[primary];
       }
 
       .cls-1, .cls-2 {
