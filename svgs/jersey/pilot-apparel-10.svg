@@ -19,11 +19,11 @@
       }
 
       .cls-5 {
-        stroke: #2b3084;
+        stroke: $[secondary];
       }
 
       .cls-5, .cls-6, .cls-7 {
-        fill: #fff;
+        fill: $[primary];
       }
 
       .cls-5, .cls-7 {
