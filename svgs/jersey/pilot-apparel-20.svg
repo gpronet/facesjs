@@ -12,7 +12,7 @@
       }
 
       .cls-2, .cls-4 {
-        fill: #0072dd;
+        fill: $[secondary];
       }
 
       .cls-5 {
@@ -25,7 +25,8 @@
       }
 
       .cls-6, .cls-7 {
-        stroke: #000;
+        stroke: $[accent];
+		fill:$[primary];
       }
 
       .cls-8, .cls-7 {
