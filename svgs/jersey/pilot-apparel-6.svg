@@ -44,7 +44,7 @@
       }
 
       .cls-5 {
-        fill: #001321;
+        fill: $[secondary];
       }
 
       .cls-10 {
