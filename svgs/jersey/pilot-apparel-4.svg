@@ -7,7 +7,7 @@
       }
 
       .cls-2 {
-        fill: #d32027;
+        fill: $[primary];
         stroke-width: 6px;
       }
 
@@ -21,6 +21,7 @@
 
       .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
         fill-rule: evenodd;
+		fill:#fff;
       }
 
       .cls-6 {
@@ -28,7 +29,7 @@
       }
 
       .cls-7 {
-        fill: #fff22d;
+        fill: $[accent];
       }
 
       .cls-8 {
@@ -40,7 +41,7 @@
       }
 
       .cls-3 {
-        fill: #333;
+        fill: $[secondary];
         stroke-width: 2px;
       }
 

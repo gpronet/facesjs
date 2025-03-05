@@ -11,7 +11,7 @@
       }
 
       .cls-4 {
-        fill: #091628;
+        fill: $[primary];
       }
 
       .cls-4, .cls-5 {
@@ -24,7 +24,7 @@
       }
 
       .cls-3 {
-        stroke: #231f20;
+        stroke: $[secondary];
         stroke-width: 2px;
       }
 
@@ -37,7 +37,7 @@
       }
 
       .cls-8 {
-        fill: #cc2729;
+        fill: $[accent];
       }
     </style>
   </defs>
