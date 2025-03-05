@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        stroke: #afff0a;
+        stroke: $[secondary];
       }
 
       .cls-1, .cls-2 {
@@ -15,7 +15,7 @@
       }
 
       .cls-5 {
-        fill: #fff;
+        fill: $[accent];
       }
 
       .cls-2 {
@@ -36,7 +36,7 @@
       }
 
       .cls-4 {
-        fill: #007b7a;
+        fill: $[primary];
       }
     </style>
   </defs>
