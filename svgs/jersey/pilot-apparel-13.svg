@@ -4,7 +4,7 @@
     <style>
       .cls-1 {
         fill: $[accent];
-        stroke: $[secondary];
+        stroke: $[accent];
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
@@ -24,8 +24,8 @@
         stroke-width: 2px;
       }
 
-      .cls-10, .cls-11 {
-        stroke: $[accent];
+      .cls-10, .cls-11, .cls-8 {
+        stroke: #000;
       }
 
       .cls-12 {
