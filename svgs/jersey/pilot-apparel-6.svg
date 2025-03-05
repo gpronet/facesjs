@@ -15,11 +15,16 @@
       }
 
       .cls-3 {
-        fill: #ffd500;
+        fill: $[primary];
       }
 
-      .cls-3, .cls-4, .cls-5, .cls-6 {
+      .cls-3, .cls-4, .cls-5 {
         stroke-width: 6px;
+	  }
+	  
+	  .cls-6 {
+        stroke-width: 6px;
+		stroke:$[accent];
       }
 
       .cls-7 {
