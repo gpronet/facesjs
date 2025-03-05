@@ -24,7 +24,7 @@
         stroke-width: 2px;
       }
 
-      .cls-10, .cls-11, .cls-8 {
+      .cls-10, .cls-11 {
         stroke: $[accent];
       }
 
