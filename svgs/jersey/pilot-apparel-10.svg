@@ -15,7 +15,7 @@
       }
 
       .cls-4 {
-        fill: #940004;
+        fill: $[accent];
       }
 
       .cls-5 {
