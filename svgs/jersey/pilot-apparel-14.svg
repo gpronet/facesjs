@@ -6,8 +6,19 @@
         stroke: #000;
       }
 
-      .cls-1, .cls-8, .cls-9, .cls-5 {
-        fill: #fff;
+      .cls-1
+	  {
+        fill: $[accent];
+      }
+	  .cls-8
+	  {
+        fill: $[accent];
+      }
+	  .cls-9{
+        fill: $[accent];
+      }
+	  .cls-5 {
+        fill: $[primary];
       }
 
       .cls-1, .cls-3, .cls-6 {
@@ -18,8 +29,9 @@
         stroke-width: 3px;
       }
 
-      .cls-2, .cls-9 {
+      .cls-2 {
         fill-rule: evenodd;
+		fill:$[secondary];
       }
 
       .cls-3 {
