@@ -3,11 +3,11 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ff850a;
+        fill: $[accent];
       }
 
       .cls-2 {
-        fill: #f0df40;
+        fill: $[secondary];
       }
 
       .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
@@ -15,7 +15,7 @@
       }
 
       .cls-9 {
-        fill: #150a00;
+        fill: $[primary];
       }
 
       .cls-9, .cls-10, .cls-11 {
@@ -59,7 +59,7 @@
       }
 
       .cls-11 {
-        fill: #f15f28;
+        fill: $[primary];
       }
     </style>
   </defs>
