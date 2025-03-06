@@ -218,6 +218,7 @@ const drawFeature = (
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
     const gElement = svg.lastChild as HTMLElement;
     const defs = svg.lastChild?.firstChild as HTMLElement;
+    console.log(defs);
     if (defs.tagName === "defs") {
       for (let idx = 0; idx < defs.children.length; idx++) {
         const tmpId = defs.children[idx].id;
