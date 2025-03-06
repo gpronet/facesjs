@@ -1,14 +1,14 @@
 // @ts-ignore
 import paper from "paper-jsdom";
-import { FaceConfig } from "./types";
 import {
+  adjustShade,
   hexToHsl,
-  rgbToHex,
+  hexToRgb,
   hslToRgb,
   rgbaToRgbaString,
-  hexToRgb,
-  adjustShade,
-} from "./color-utils";
+  rgbToHex,
+} from "./color-utils.js";
+import { FaceConfig } from "./types";
 
 export const swapSiblings = (svg: SVGSVGElement) => {
   const shadowDOMElement = getChildElement(svg, "afterbegin") as SVGSVGElement;
