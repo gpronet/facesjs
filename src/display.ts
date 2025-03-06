@@ -230,7 +230,7 @@ const drawFeature = (
           ) {
             gElement.children[idx2].setAttribute(
               "fill",
-              "url(#" + tmpId + feature.id + ")",
+              "url('#" + tmpId + feature.id + "')",
             );
           }
           const gEl = gElement.children[idx2] as HTMLElement;
