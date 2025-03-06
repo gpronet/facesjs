@@ -2,7 +2,7 @@ import {
   addClassToElement,
   addWrapper,
   getChildElement,
-} from "./display-utils";
+} from "./display-utils.js";
 import override from "./override.js";
 import svgs from "./svgs.js";
 import { FaceConfig, Overrides } from "./types";
