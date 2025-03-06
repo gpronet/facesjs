@@ -1,4 +1,8 @@
-import { addWrapper } from "./display-utils.js";
+import {
+  addClassToElement,
+  addWrapper,
+  getChildElement,
+} from "./display-utils.js";
 import override from "./override.js";
 import svgs from "./svgs.js";
 import { FaceConfig, Overrides } from "./types";
@@ -25,7 +29,6 @@ const scaleStrokeWidthAndChildren = (
   element: SVGGraphicsElement,
   factor: number,
 ) => {
-  console.log(JSON.stringify(element));
   if (element.tagName === "style" || element.nodeName === "#text") {
     return;
   }
@@ -206,16 +209,15 @@ const drawFeature = (
   );
 
   const bodySize = face.body.size !== undefined ? face.body.size : 1;
-  /* const insertPosition: "afterbegin" | "beforeend" = info.placeBeginning
+  const insertPosition: "afterbegin" | "beforeend" = info.placeBeginning
     ? "afterbegin"
-    : "beforeend";*/
+    : "beforeend";
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
     const gElement = svg.lastChild as HTMLElement;
     const defs = svg.lastChild?.firstChild as HTMLElement;
-    console.log(defs);
-    if (defs && defs.tagName === "defs") {
+    if (defs.tagName === "defs") {
       for (let idx = 0; idx < defs.children.length; idx++) {
         const tmpId = defs.children[idx].id;
         defs.children[idx].id += feature.id;
@@ -242,11 +244,11 @@ const drawFeature = (
       }
     }
 
-    // const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
+    const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
 
-    //for (const granchildElement of childElement.children) {
-    // addClassToElement(granchildElement as SVGGraphicsElement, feature.id);
-    // }
+    for (const granchildElement of childElement.children) {
+      addClassToElement(granchildElement as SVGGraphicsElement, feature.id);
+    }
 
     const position = info.positions[i];
 
@@ -296,7 +298,7 @@ const drawFeature = (
     }
 
     if (info.name === "eye") {
-      /* for (const granchildElement of childElement.children) {
+      for (const granchildElement of childElement.children) {
         if (granchildElement.getAttribute("fill") === `$[eyeReflection${i}]`) {
           granchildElement.setAttribute("fill", "white");
           if (i === 1) {
@@ -314,7 +316,7 @@ const drawFeature = (
         ) {
           granchildElement.setAttribute("fill", "none");
         }
-      }*/
+      }
     }
 
     /* if (info.name === "earring") {
