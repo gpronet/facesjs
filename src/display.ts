@@ -29,6 +29,7 @@ const scaleStrokeWidthAndChildren = (
   element: SVGGraphicsElement,
   factor: number,
 ) => {
+  console.log(JSON.stringify(element));
   if (element.tagName === "style" || element.nodeName === "#text") {
     return;
   }
