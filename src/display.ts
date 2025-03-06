@@ -1,8 +1,4 @@
-import {
-  addClassToElement,
-  addWrapper,
-  getChildElement,
-} from "./display-utils.js";
+import { addWrapper } from "./display-utils.js";
 import override from "./override.js";
 import svgs from "./svgs.js";
 import { FaceConfig, Overrides } from "./types";
@@ -246,11 +242,11 @@ const drawFeature = (
       }
     }
 
-    const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
+    // const childElement = getChildElement(svg, insertPosition) as SVGSVGElement;
 
-    for (const granchildElement of childElement.children) {
-      addClassToElement(granchildElement as SVGGraphicsElement, feature.id);
-    }
+    //for (const granchildElement of childElement.children) {
+    // addClassToElement(granchildElement as SVGGraphicsElement, feature.id);
+    // }
 
     const position = info.positions[i];
 
@@ -300,7 +296,7 @@ const drawFeature = (
     }
 
     if (info.name === "eye") {
-      for (const granchildElement of childElement.children) {
+      /* for (const granchildElement of childElement.children) {
         if (granchildElement.getAttribute("fill") === `$[eyeReflection${i}]`) {
           granchildElement.setAttribute("fill", "white");
           if (i === 1) {
@@ -318,7 +314,7 @@ const drawFeature = (
         ) {
           granchildElement.setAttribute("fill", "none");
         }
-      }
+      }*/
     }
 
     /* if (info.name === "earring") {
