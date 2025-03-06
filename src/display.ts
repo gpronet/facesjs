@@ -206,9 +206,9 @@ const drawFeature = (
   );
 
   const bodySize = face.body.size !== undefined ? face.body.size : 1;
-  const insertPosition: "afterbegin" | "beforeend" = info.placeBeginning
+  /* const insertPosition: "afterbegin" | "beforeend" = info.placeBeginning
     ? "afterbegin"
-    : "beforeend";
+    : "beforeend";*/
 
   for (let i = 0; i < info.positions.length; i++) {
     svg.insertAdjacentHTML("beforeend", addWrapper(featureSVGString));
