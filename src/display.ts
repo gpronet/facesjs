@@ -438,16 +438,16 @@ export const display = (
       ],
     },
     {
-      name: "hair",
-      positions: [null],
-      scaleFatness: true,
-    },
-    {
       name: "eyebrow",
       positions: [
         [140, 270],
         [260, 270],
       ],
+    },
+    {
+      name: "hair",
+      positions: [null],
+      scaleFatness: true,
     },
     {
       name: "mouth",
