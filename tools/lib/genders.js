@@ -1,6 +1,8 @@
 export const genders = {
   accessories: {
     "eye-black": "both",
+    cap1: "both",
+    cap2: "both",
     hat: "both",
     hat2: "both",
     hat3: "both",
