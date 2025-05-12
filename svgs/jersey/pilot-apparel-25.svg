@@ -38,11 +38,11 @@
       }
 
       .st2, .st6 {
-        fill: #1b293d;
+        fill: $[primary];
       }
 
       .st3, .st5 {
-        fill: #34547f;
+        fill: $[secondary];
       }
 
       .st10 {
@@ -50,7 +50,7 @@
       }
 
       .st4 {
-        fill: #243957;
+        fill: $[accent];
         stroke-width: 2px;
       }
 
