@@ -4,7 +4,7 @@
   <defs>
     <style>
       .st0 {
-        fill: #bc201f;
+        fill: $[primary];
       }
 
       .st0, .st1, .st2 {
@@ -16,7 +16,7 @@
       }
 
       .st4, .st1, .st5, .st3 {
-        fill: #fff;
+        fill: $[accent];
       }
 
       .st1, .st2, .st6 {
@@ -28,7 +28,7 @@
       }
 
       .st3, .st6 {
-        stroke: #fff;
+        stroke: $[secondary];
       }
 
       .st7 {
