@@ -8,11 +8,11 @@
       }
 
       .st1 {
-        stroke: #2b3084;
+        stroke: $[secondary];
       }
 
       .st1, .st2, .st3, .st4, .st5 {
-        fill: #fff;
+        fill: $[primary];
       }
 
       .st1, .st5 {
@@ -36,7 +36,7 @@
       }
 
       .st10 {
-        fill: #ffa80a;
+        fill: $[accent];
       }
 
       .st9 {
