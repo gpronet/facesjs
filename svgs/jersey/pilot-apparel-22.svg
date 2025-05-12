@@ -4,11 +4,11 @@
   <defs>
     <style>
       .st0 {
-        fill: #fff;
+        fill: $[secondary];
       }
 
       .st1 {
-        fill: #1e1e1e;
+        fill: $[primary];
         stroke: #000;
         stroke-width: 6px;
       }
@@ -18,7 +18,7 @@
       }
 
       .st2, .st3 {
-        fill: #ff9006;
+        fill: $[accent];
       }
 
       .st4 {
