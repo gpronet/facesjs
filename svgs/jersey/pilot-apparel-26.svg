@@ -7,9 +7,12 @@
         stroke-miterlimit: 10;
         stroke-width: 3px;
       }
-
-      .st0, .st1 {
-        fill: #182c54;
+	  
+	  .st0 {
+        fill: lime;
+      } 
+	  .st1 {
+        fill: lime;
       }
 
       .st0, .st1, .st2 {
