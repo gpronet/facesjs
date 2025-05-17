@@ -9,10 +9,10 @@
       }
 	  
 	  .st0 {
-        fill: lime;
+        fill: $[secondary];
       } 
 	  .st1 {
-        fill: lime;
+        fill: $[accent];
       }
 
       .st0, .st1, .st2 {
@@ -24,7 +24,7 @@
       }
 
       .st4, .st5, .st2 {
-        fill: #fff;
+        fill: $[primary];
       }
 
       .st1, .st2 {
