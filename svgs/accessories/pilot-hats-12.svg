@@ -44,7 +44,7 @@
       }
 
       .st9 {
-        font-family: FranklinGothic-HeavyItalic, 'Franklin Gothic Heavy';
+        font-family: FranklinGothic-HeavyItalic, Franklin Gothic Heavy;
         font-size: 36.5px;
         font-style: italic;
         font-weight: 800;

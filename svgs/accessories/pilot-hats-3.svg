@@ -16,7 +16,7 @@
       }
 
       .st4 {
-        font-family: CenturyGothic-Bold, 'Century Gothic';
+        font-family: CenturyGothic-Bold, Century Gothic;
         font-size: 19.6px;
         font-weight: 700;
       }
