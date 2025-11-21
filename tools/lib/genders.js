@@ -426,6 +426,10 @@ export const genders = {
     "misc-line-elderly-14": "both",
     "misc-line-elderly-15": "both",
     "misc-line-elderly-16": "both",
+    "misc-line-elderly-17": "both",
+    "misc-line-elderly-18": "both",
+    "misc-line-elderly-19": "both",
+    "misc-line-elderly-20": "both",
   },
   mouth: {
     angry: "both",
