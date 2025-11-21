@@ -122,6 +122,8 @@ export const genders = {
     "eye-line-elderly-16": "both",
     "eye-line-elderly-17": "both",
     "eye-line-elderly-18": "both",
+    "eye-line-elderly-19": "both",
+    "eye-line-elderly-20": "both",
   },
   eyebrow: {
     eyebrow1: "both",
