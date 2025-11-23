@@ -241,6 +241,7 @@ export const genders = {
     "wilt-sideburns-long": "male",
     "wilt-sideburns-short": "male",
     wilt: "male",
+    beard_elderly1: "male",
   },
   glasses: {
     facemask: "both",
@@ -303,6 +304,7 @@ export const genders = {
     spike3: "male",
     spike4: "male",
     "tall-fade": "male",
+    hair_elderly1: "both",
   },
   hairBg: {
     female1: "female",
