@@ -12,7 +12,7 @@
       }
 
       .st2 {
-        fill: #222;
+        fill: $[hairColor];
       }
     </style>
   </defs>

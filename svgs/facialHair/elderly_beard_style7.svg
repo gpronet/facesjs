@@ -8,7 +8,7 @@
       }
 
       .st1 {
-        fill: #222;
+        fill: $[hairColor];
       }
 
       .st2 {

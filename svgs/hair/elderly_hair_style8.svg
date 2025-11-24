@@ -4,7 +4,7 @@
   <defs>
     <style>
       .st0 {
-        fill: #080808;
+        fill: $[hairColor];
       }
 
       .st1, .st2 {
